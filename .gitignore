@@ -1,0 +1,25 @@
+# Python virtual environment
+.venv/
+venv/
+env/
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Benchmark generated results
+results/raw/*.json
+
+# Generated plots
+plots/*.png
+plots/*.jpg
+plots/*.jpeg
+
+# Logs
+*.log
+
+# OS files
+.DS_Store

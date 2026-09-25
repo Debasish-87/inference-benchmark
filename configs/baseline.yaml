@@ -1,0 +1,32 @@
+model:
+  name: Qwen/Qwen2.5-1.5B-Instruct
+  served_name: llm-model
+
+hardware:
+  gpu: Tesla T4
+  gpu_count: 1
+
+vllm:
+  version: "0.30.0"
+  tensor_parallel_size: 1
+  pipeline_parallel_size: 1
+  max_model_len: 2000
+  gpu_memory_utilization: 0.85
+
+workload:
+  dataset: random
+  input_len: 430
+  output_len: 1000
+  num_prompts: 50
+  request_rate: 2
+
+experiment:
+  variable: max_num_seqs
+  values:
+    - 4
+    - 8
+    - 12
+    - 16
+
+  repetitions: 3
+  warmup: true
