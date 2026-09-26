@@ -2,7 +2,13 @@ workload:
   dataset: random
 
   total_requests: 50
-  request_rate: 2
+  request_rate:
+    - 0.1
+    - 0.2
+    - 0.3
+    - 0.5
+    - 1
+    - 2
 
   input_len: 430
   output_len: 1000
