@@ -40,20 +40,15 @@ experiment:
 
   max_num_seqs:
     - 16
-    - 32
     - 64
-    - 96
     - 160
 
   request_rate:
-    - 0.1
-    - 0.2
-    - 0.3
-    - 0.5
     - 1
     - 2
+    - 3
 
-  repetitions: 3
+  repetitions: 2
   warmup: true
 
 slo:
